@@ -237,7 +237,7 @@ img {
 /* services */
 .services__wrapper {
     row-gap: 2.5rem;
-    grid-template-columns: repeat(auto-fit, min-max(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 .services__content {
     text-align: center;
@@ -325,7 +325,7 @@ img {
     margin-bottom: var(--mb-3);
 }
 /* footer */
-.footer__container {
+.footer__wrapper {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     row-gap: 2rem;
 }
@@ -362,4 +362,84 @@ img {
     font-size: var(--small-font-size);
     color: var(--text-color);
     margin-top: 3.5rem;
+}
+/* media queries */
+@media screen and (min-width: 576px) {
+    .home__wrapper,
+    .about__wrapper,
+    .app__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .about__data, .about__initial,
+    .app__data, .app__initial,
+    .contacts__container, .contacts__initial {
+        text-align: initial;
+    }
+    .about__img, .app__img {
+        width: 380px;
+        order: -1;
+    }
+    .contacts__wrapper {
+        grid-template-columns: 1.75fr 1fr;
+        align-items: center;
+    }
+    .contacts__button {
+        justify-self: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+    .section {
+        padding-top: 8rem;
+    }
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+    .nav__list {
+        display: flex;
+    }
+    .nav__item {
+        margin-left: var(--mb-5);
+        margin-bottom: 0;
+    }
+    .nav__toggle {
+        display: none;
+    }
+    .home__wrapper {
+        height: 100vh;
+        justify-items: center;
+    }
+    .services__wrapper,
+    .menu__wrapper {
+        margin-top: var(--mb-6);
+    }
+    .menu__wrapper {
+        grid-template-columns: repeat(3, 210px);
+        column-gap: 4rem;
+    }
+    .menu__content {
+        padding: 1.5rem;
+    }
+    .menu__img {
+        width: 130px;
+    }
+    .app__store {
+        margin: 0 var(--mb-1);
+    }
+}
+@media screen and (min-width: 960px) {
+    .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home__img {
+        width: 500px;
+    }
+    .about__wrapper, 
+    .app__wrapper {
+        column-gap: 7rem;
+    }
 }

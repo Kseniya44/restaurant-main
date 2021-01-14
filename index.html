@@ -36,8 +36,8 @@
     <!-- main -->
     <main class="main">
         <!-- home -->
-        <section class="home" id="home">
-            <div class="home__wrapper wrapper">
+        <section class="home wrapper section" id="home">
+            <div class="home__wrapper grid">
                 <div class="home__data">
                     <h1 class="home__title">Tasty</h1>
                     <h2 class="home__subtitle">Try the best food of <br>the week.</h2>
@@ -51,8 +51,8 @@
         <section class="about section wrapper" id="about">
             <div class="about__wrapper grid">
                 <div class="about__data">
-                    <span class="section__subtitle">About us</span>
-                    <h2 class="section__title">We cook the best <br> tasty food</h2>
+                    <span class="section__subtitle about__initial">About us</span>
+                    <h2 class="section__title about__initial">We cook the best <br> tasty food</h2>
                     <p class="about__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati qui odit veniam, cum molestiae officiis.</p>
                     <button class="button">Explore history</button>
                 </div>
@@ -388,16 +388,17 @@
         <section class="app section wrapper" id="app">
             <div class="app__wrapper grid">
                 <div class="app__data">
-                    <span class="section__subtitle">App</span>
-                    <h2 class="section__title">App is avaible</h2>
+                    <span class="section__subtitle app__initial">App</span>
+                    <h2 class="section__title app__initial">App is avaible</h2>
                     <p class="app__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis repellendus sit natus cupiditate nobis!</p>
-                </div>
-                
-                <div class="app__stores">
-                    <a href="#" class="app__store">
-                        <img src="assets/img/app1.png" alt="app" class="app__icon">
-                        <img src="assets/img/app2.png" alt="app" class="app__icon">
-                    </a>
+               
+                    <div class="app__stores">
+                        <a href="#" class="app__store">
+                            <img src="assets/img/app1.png" alt="app" class="app__icon">
+                            <img src="assets/img/app2.png" alt="app" class="app__icon">
+                        </a>
+                    </div>
+
                 </div>
                 
                 <img src="assets/img/movil-app.png" alt="app" class="app__img">
@@ -408,8 +409,8 @@
         <section class="contacts section wrapper" id="contacts">
             <div class="contacts__wrapper grid">
                 <div class="contacts__data">
-                    <span class="section__subtitle">Let's talk</span>
-                    <h2 class="section__title">Contact us</h2>
+                    <span class="section__subtitle contacts__initial">Let's talk</span>
+                    <h2 class="section__title contacts__initial">Contact us</h2>
                     <p class="contacts__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A minima iste ex earum ad adipisci?</p>
                 </div>
                 <div class="contacts__button">
@@ -422,7 +423,7 @@
     <!-- main -->
     <!-- footer -->
     <footer class="footer section wrapper" id="footer">
-        <div class="footer__wrapper">
+        <div class="footer__wrapper grid">
             <div class="footer__content">
                 <a href="#" class="footer__logo">Tasty food</a>
                 <span class="footer__description">Restaurant</span>
@@ -438,40 +439,40 @@
                         <i class="bx bxl-twitter"></i>
                     </a>
                 </div>
-                
-                <div class="footer__content">
-                    <h3 class="footer__title">Services</h3>
-                    <ul class="footer__info">
-                        <li class="footer__text"><a href="#" class="footer__link">Fast food</a></li>
-                        <li class="footer__text"><a href="#" class="footer__link">Reserve your spot</a></li>
-                        <li class="footer__text"><a href="#" class="footer__link">Pricing</a></li>
-                        <li class="footer__text"><a href="#" class="footer__link">Delivery</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__content">
-                    <h3 class="footer__title">Information</h3>
-                    <ul class="footer__info">
-                        <li class="footer__text"><a href="#" class="footer__link">Contact us</a></li>
-                        <li class="footer__text"><a href="#" class="footer__link">Privacy policy</a></li>
-                        <li class="footer__text"><a href="#" class="footer__link">Fast food</a></li>
-                        <li class="footer__text"><a href="#" class="footer__link">Terms of services</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__content">
-                    <h3 class="footer__title">Address</h3>
-                    <ul class="footer__info">
-                        <li class="footer__text">Lima - Peru</li>
-                        <li class="footer__text"><a href="tel: +999999888777" class="footer__link">Jr Union #999</a></li>
-                        <li class="footer__text"><a href="tel: +999999888777" class="footer__link">999 - 888 - 777</a></li>
-                        <li class="footer__text"><a href="mail: tastyfood@email.com " class="footer__link">tastyfood@email.com</a></li>
-                    </ul>
-                </div>
-                
             </div>
-            <p class="footer__copy">&#169;2020 All right reserved.</p>
+                
+            <div class="footer__content">
+                <h3 class="footer__title">Services</h3>
+                <ul class="footer__info">
+                    <li class="footer__text"><a href="#" class="footer__link">Fast food</a></li>
+                    <li class="footer__text"><a href="#" class="footer__link">Reserve your spot</a></li>
+                    <li class="footer__text"><a href="#" class="footer__link">Pricing</a></li>
+                    <li class="footer__text"><a href="#" class="footer__link">Delivery</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">Information</h3>
+                <ul class="footer__info">
+                    <li class="footer__text"><a href="#" class="footer__link">Contact us</a></li>
+                    <li class="footer__text"><a href="#" class="footer__link">Privacy policy</a></li>
+                    <li class="footer__text"><a href="#" class="footer__link">Fast food</a></li>
+                    <li class="footer__text"><a href="#" class="footer__link">Terms of services</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">Address</h3>
+                <ul class="footer__info">
+                    <li class="footer__text">Lima - Peru</li>
+                    <li class="footer__text"><a href="tel: +999999888777" class="footer__link">Jr Union #999</a></li>
+                    <li class="footer__text"><a href="tel: +999999888777" class="footer__link">999 - 888 - 777</a></li>
+                    <li class="footer__text"><a href="mail: tastyfood@email.com " class="footer__link">tastyfood@email.com</a></li>
+                </ul>
+            </div>
+                
         </div>
+        <p class="footer__copy">&#169;2020 All right reserved.</p>
     </footer>
     <!-- footer -->
     <script src="https://unpkg.com/scrollreveal"></script>
